@@ -100,7 +100,7 @@ public:
         //   2. Copy m_length from other
         //   3. Allocate new memory: new char[m_length + 1]
         //   4. Copy string data using strcpy()
-        g_destructorCount++ ;
+       g_copyConstructorCount++ ;
        m_length=other.m_length;
        m_data = new char[m_length + 1];
        strcpy(m_data, other.m_data);
